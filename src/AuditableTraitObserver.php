@@ -3,6 +3,7 @@
 namespace Yajra\Auditable;
 
 use Illuminate\Database\Eloquent\Model;
+use Encore\Admin\Facades\Admin;
 
 class AuditableTraitObserver
 {
