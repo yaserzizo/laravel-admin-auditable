@@ -29,7 +29,7 @@ class AuditableTraitObserver
      */
     protected function getAuthenticatedUserId()
     {
-        return auth()->check() ? auth()->id() : 0;
+        return Admin::user() ? Admin::user()->id : 0;
     }
 
     /**
